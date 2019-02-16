@@ -1,0 +1,125 @@
+<?xml version="1.0"?>
+<config>
+    <tabs>
+        <upseller_clouldsearch translate="label" module="upseller_clouldsearch">
+            <label>Upseller API</label>
+            <sort_order>100</sort_order>
+        </upseller_clouldsearch>
+    </tabs>
+    <sections>
+    	<upseller_clouldsearch translate="label" module="upseller_clouldsearch">
+            <label>Clouldsearch</label>
+			<tab>upseller_clouldsearch</tab>
+            <frontend_type>text</frontend_type>
+            <sort_order>1000</sort_order>
+            <show_in_default>1</show_in_default>
+            <show_in_website>1</show_in_website>
+            <show_in_store>1</show_in_store>
+            <groups>
+				<settings translate="label comment">
+					<label>Settings</label>
+					<sort_order>1</sort_order>
+					<show_in_default>1</show_in_default>
+					<show_in_website>1</show_in_website>
+					<show_in_store>1</show_in_store>
+					<fields>
+						<active translate="label">
+                            <label>Enabled</label>
+                            <frontend_type>select</frontend_type>
+                            <source_model>adminhtml/system_config_source_yesno</source_model>
+                            <sort_order>1</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                        </active>
+                        <active_quicksearch translate="label">
+                            <label>Enabled Quick Search</label>
+                            <comment><![CDATA[Enabled Quick Search]]></comment>
+                            <frontend_type>select</frontend_type>
+                            <source_model>adminhtml/system_config_source_yesno</source_model>
+                            <sort_order>1</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                        </active_quicksearch>
+                        <active_catalogsearch translate="label">
+                            <label>Enabled Advance Catalog search</label>
+                            <comment><![CDATA[Enabled Advance Catalog search]]></comment>
+                            <frontend_type>select</frontend_type>
+                            <source_model>adminhtml/system_config_source_yesno</source_model>
+                            <sort_order>1</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                        </active_catalogsearch>
+                        <active_advance translate="label">
+                            <label>Enabled Advance Search</label>
+                            <comment><![CDATA[Enabled Advance Search]]></comment>
+                            <frontend_type>select</frontend_type>
+                            <source_model>adminhtml/system_config_source_yesno</source_model>
+                            <sort_order>1</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                        </active_advance>                        
+                        <subdomain translate="label">
+                            <label>Upseller Sub Domain</label>
+                            <comment><![CDATA[Can be found under General at Upseller]]></comment>
+                            <frontend_type>text</frontend_type>
+                            <sort_order>1</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                        </subdomain>
+                        <cluster_key translate="label">
+                            <label>Upseller Cluster Key</label>
+                            <comment><![CDATA[Can be found under Node at Upseller]]></comment>
+                            <frontend_type>text</frontend_type>
+                            <sort_order>1</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                        </cluster_key>
+                        <apiuid translate="label">
+                            <label>Upseller API UID</label>
+                            <comment><![CDATA[Can be found under General at Upseller]]></comment>
+                            <frontend_type>text</frontend_type>
+                            <sort_order>21</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                        </apiuid>
+                        <apikey translate="label">
+                            <label>Upseller API Key</label>
+                            <comment><![CDATA[Can be found under General at Upseller]]></comment>
+                            <frontend_type>text</frontend_type>
+                            <sort_order>21</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                        </apikey>
+                        <searchdomain translate="label comment">
+                            <label>Environment</label>
+                            <comment>Select Environment.</comment>
+                            <frontend_type>select</frontend_type>
+                            <source_model>upseller_clouldsearch/system_config_source_environment_values</source_model>
+                            <sort_order>22</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>0</show_in_website>
+                            <show_in_store>0</show_in_store>
+                        </searchdomain>
+                        <syncrobatch>
+                            <label>Synchronization Batch</label>
+                            <comment><![CDATA[Can be found under General at Upseller]]></comment>
+                            <frontend_type>text</frontend_type>
+                            <sort_order>23</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                        </syncrobatch>
+					</fields>
+				</settings>
+            </groups>
+    	</upseller_clouldsearch>
+    </sections>
+</config>

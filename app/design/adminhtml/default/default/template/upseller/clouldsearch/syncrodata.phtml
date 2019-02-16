@@ -1,0 +1,51 @@
+<?php 
+$assets=$this->getAssests();
+$syncrobatch=Mage::getStoreConfig("upseller_clouldsearch/settings/syncrobatch");
+?>
+<div class="wrapper-empty">
+<input type="hidden" id="category" value="<?php echo $assets['category']; ?>">
+<input type="hidden" id="products" value="<?php echo $assets['products']; ?>">
+<input type="hidden" id="syncrobatch" value="<?php echo $syncrobatch; ?>">
+<input type="hidden" id="ajaxurl" value="<?php echo $this->getUrl('adminhtml/api/syncrodata'); ?>">
+<input type="hidden" id="lastsyncro" value="0">
+<input type="hidden" id="currentqueue" value="product">
+	<div class="empty" id="anchor-content" style="padding-bottom: 0px;">
+        <div id="page:main-container">
+
+            <div class="content-row">
+            	<div class="content-column">
+            		<?php echo $this->__('Initialization.......'); ?>
+            	</div>
+            </div>
+            <div class="content-row">
+            	<div class="content-column">
+            		<?php echo $this->__('Total Categories : ').$assets['category']; ?>
+            	</div>
+            	<div class="content-column">
+            		<?php echo $this->__('Total Products : ').$assets['products']; ?>
+            	</div>
+            </div>
+
+
+
+        </div>
+	</div>
+</div>    
+<script type="text/javascript">
+	window.onload=function(){
+		category=document.getElementById("category").value;
+		products=document.getElementById("products").value;
+		syncrobatch=document.getElementById("syncrobatch").value;
+		ajaxurl=document.getElementById("ajaxurl").value;
+		lastsyncro=document.getElementById("lastsyncro").value;
+		currentqueue=document.getElementById("currentqueue").value;
+		var object={};
+		object['category']=category;
+		object['products']=products;
+		object['syncrobatch']=syncrobatch;
+		object['ajaxurl']=ajaxurl;
+		object['lastsyncro']=lastsyncro;
+		object['currentqueue']=currentqueue;
+		var cloudsearchMigrationInit = new cloudsearchMigration(object);
+	}
+</script>

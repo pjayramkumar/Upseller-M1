@@ -1,0 +1,12 @@
+<?xml version="1.0" ?>
+<config>
+    <modules>
+        <Upseller_ClouldsearchAdvance>
+            <active>true</active>
+            <codePool>local</codePool>
+            <depends>
+            	<Upseller_Clouldsearch/>
+            </depends>
+        </Upseller_ClouldsearchAdvance>
+    </modules>
+</config>

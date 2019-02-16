@@ -1,0 +1,15 @@
+<?xml version="1.0"?>
+<layout version="0.1.0">
+   <default>
+      
+        
+        <reference name="content">
+            <block type="upseller_clouldsearch/cloudsearch_script" name="upseller_cloudsearch_script" template="upseller/cloudsearch/script.phtml">
+                <!--<action method="setTemplate" ifconfig="conversio/settings/active">-->
+                <!--<action method="setTemplate">
+                    <template>upseller/cloudsearch/script.phtml</template>
+                </action>-->
+            </block>
+        </reference>
+    </default>
+</layout>

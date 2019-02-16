@@ -1,0 +1,50 @@
+<?xml version="1.0" ?>
+<config>
+	<acl>
+		<resources>
+			<all>
+				<title>Allow Everything</title>
+			</all>
+			<admin>
+				<children>
+					<system>
+						<children>
+							<config>
+								<children>
+									<upseller_clouldsearch translate="title" module="upseller_clouldsearch">
+										<title>Upseller - Clouldsearch</title>
+										<sort_order>999</sort_order>
+									</upseller_clouldsearch>
+								</children>
+							</config>
+						</children>
+					</system>
+				</children>
+			</admin>
+		</resources>
+	</acl>
+
+	<menu>
+		<system module="adminhtml">   
+			<children>
+		        <upseller module="upseller_clouldsearch">
+		            <title>Upseller</title>
+		            <sort_order>71</sort_order>               
+		            <children>
+		                <clouldsearch module="upseller_clouldsearch">
+		                    <title>Clouldsearch</title>
+		                    <sort_order>0</sort_order>
+		                    <children>
+		                    	<synchronization module="upseller_clouldsearch">
+			                    	<title>Synchronization</title>
+			                    	<sort_order>0</sort_order>
+			                    	<action>clouldsearch/adminhtml_synchronization</action>
+			                    </synchronization>	
+		                    </children>	
+		                </clouldsearch>
+		            </children>
+		        </upseller>
+		    </children>    
+	    </system>    
+    </menu>
+</config>

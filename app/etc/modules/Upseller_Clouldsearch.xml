@@ -1,0 +1,9 @@
+<?xml version="1.0" ?>
+<config>
+    <modules>
+        <Upseller_Clouldsearch>
+            <active>true</active>
+            <codePool>local</codePool>
+        </Upseller_Clouldsearch>
+    </modules>
+</config>

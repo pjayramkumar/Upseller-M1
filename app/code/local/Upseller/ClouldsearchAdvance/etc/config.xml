@@ -1,0 +1,61 @@
+<?xml version="1.0"?>
+<config>
+    <modules>
+        <Upseller_ClouldsearchAdvance>
+            <version>1.0.0</version>
+        </Upseller_ClouldsearchAdvance>
+    </modules>
+
+    <global>
+
+    	<helpers>
+            <upseller_clouldsearchadvance>
+                <class>Upseller_ClouldsearchAdvance_Helper</class>
+            </upseller_clouldsearchadvance>
+        </helpers>
+        <models>
+			<upseller_clouldsearchadvance>
+				<class>Upseller_ClouldsearchAdvance_Model</class>
+			</upseller_clouldsearchadvance>
+		</models>
+
+    </global>
+
+    <adminhtml>
+    	<events>
+    	    <catalog_product_save_after>
+                <observers>
+                    <product_save_after_observer>
+                        <class>Upseller_ClouldsearchAdvance_Model_Observer</class>
+                        <method>productSaveAfter</method>
+                    </product_save_after_observer>
+                </observers>
+            </catalog_product_save_after>
+            <catalog_product_to_website_change>
+                <observers>
+                    <product_to_website_change_observer>
+                        <class>Upseller_ClouldsearchAdvance_Model_Observer</class>
+                        <method>productWebsiteChangeAfter</method>
+                    </product_to_website_change_observer>
+                </observers>
+            </catalog_product_to_website_change>
+            <catalog_category_save_after>
+                <observers>
+                    <category_save_after_observer>
+                        <class>Upseller_ClouldsearchAdvance_Model_Observer</class>
+                        <method>categoriesSaveAfter</method>
+                    </category_save_after_observer>
+                </observers>
+            </catalog_category_save_after>
+            <catalogrule_rule_save_after>
+                <observers>
+                    <catalogrule_rule_save_after_observer>
+                        <class>Upseller_ClouldsearchAdvance_Model_Observer</class>
+                        <method>catalogruleRuleSaveAfter</method>
+                    </catalogrule_rule_save_after_observer>
+                </observers>
+            </catalogrule_rule_save_after>
+        </events>    
+    </adminhtml>
+
+</config>        

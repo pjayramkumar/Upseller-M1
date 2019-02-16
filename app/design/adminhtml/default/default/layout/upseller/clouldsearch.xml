@@ -1,0 +1,24 @@
+<?xml version="1.0"?>
+<layout version="0.1.0">
+
+
+  <clouldsearch_adminhtml_synchronization_index>
+      <reference name="head">
+        <action method="addJs"><script>upseller/cloudsearch/syncrodata.js</script></action>
+        <action method="addItem"><type>skin_css</type><name>upseller/cloudsearch/cloudsearch.css</name></action>
+      </reference>
+      <reference name="content">
+          <block type="upseller_clouldsearch/adminhtml_synchronization_index" name="syncrodataadmin" template="upseller/clouldsearch/synchronization/index.phtml"/> 
+      </reference>
+  </clouldsearch_adminhtml_synchronization_index>
+
+  <clouldsearch_synchronization_infomation>
+      <remove name="right"/>
+      <remove name="left"/>
+      <remove name="head"/>
+      <remove name="header"/>
+      <remove name="footer"/>
+      <block type="upseller_clouldsearch/adminhtml_synchronization_syncroinfo" name="root" output="toHtml" template="upseller/clouldsearch/synchronization/syncroinfo.phtml" />
+  </clouldsearch_synchronization_infomation>
+
+</layout>

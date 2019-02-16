@@ -1,0 +1,45 @@
+<?php 
+$cloudseachSession=Mage::Helper('upseller_clouldsearch/session')->getCloudSearchSession();
+if($cloudseachSession){
+
+	//Zend_Debug::dump($cloudseachSession);
+
+	$attributes=$this->getAttributeSyncroInfo();
+
+	$catalog=$this->getCatalogSyncroInfo();
+
+?>
+	<div class="entry-edit-head">
+		<h4><?php echo $this->__('Synchronization Information'); ?></h4>
+	</div>
+	<div id="syncro_information" class="fieldset">
+		<div class="hor-scroll">
+			<table class="form-list" cellspacing="0">
+				<tbody>
+					
+						<!--<tr class="<?php //echo $attributes['attributesClass']; ?>">
+					        <td class="label"><?php //echo $this->__('Attributes'); ?></td>
+						    <td class="value">
+						        <p><?php //echo $attributes['totalDone']; ?>/<?php //echo $attributes['total']; ?></p>
+						    </td>
+					    </tr>-->
+					    <tr class="<?php echo $catalog['categoryClass']; ?>">
+					        <td class="label"><?php echo $this->__('Categories'); ?></td>
+						    <td class="value">
+						        <p><?php echo $catalog['categorydone']; ?>/<?php echo $catalog['categoryTotal']; ?></p>
+						    </td>
+					    </tr>
+					    <tr class="<?php echo $catalog['productClass']; ?>">
+					        <td class="label"><?php echo $this->__('Products'); ?></td>
+						    <td class="value">
+						        <p><?php echo $catalog['productdone']; ?>/<?php echo $catalog['productTotal']; ?></p>
+						    </td>
+					    </tr>
+					    
+					    
+					  
+				</tbody>
+			</table>
+		</div>
+	</div>
+<?php } ?>	
