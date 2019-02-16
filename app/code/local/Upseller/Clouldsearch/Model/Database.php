@@ -165,6 +165,8 @@ class Upseller_Clouldsearch_Model_Database extends Mage_Core_Model_Abstract{
 
 
     $categoryArray=[];
+    
+    /** comment by pratik **/
 
     //$attributeName=$this->getCategoryNameAttribute();
 
