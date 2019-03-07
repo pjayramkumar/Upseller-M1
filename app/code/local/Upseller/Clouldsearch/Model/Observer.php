@@ -272,7 +272,7 @@ class Upseller_Clouldsearch_Model_Observer
                             $trackObject['qty']=$currentItem->getQty();
                             $trackObject['amount']=$currentItem->getRowTotalInclTax();
                             $trackObject['is_removed']=false;
-                            $trackObject['upseller_search']=false;
+                            //$trackObject['upseller_search']=false;
 
                         }
 
