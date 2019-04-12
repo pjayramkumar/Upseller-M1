@@ -3,7 +3,7 @@ class Upseller_Clouldsearch_Helper_Data extends Mage_Core_Helper_Abstract{
 
 	protected $_isDevelopmentMode=true;
 
-	public $_cms="salecto";
+	public $_cms="magento";
 
 	public $_version="";
 
