@@ -255,6 +255,7 @@ class Upseller_Clouldsearch_Model_Observer
                             $trackObject['name']=$currentItem->getName();
                             $trackObject['sku']=$currentItem->getSku();
                             $trackObject['unique_id']=$currentItem->getProductId();
+                            $trackObject['unit_price']=$currentItem->getPriceInclTax();
                             $trackObject['qty']=$currentItem->getQty();
                             $trackObject['amount']=$currentItem->getRowTotalInclTax();
                             $trackObject['is_removed']=false;
@@ -269,10 +270,11 @@ class Upseller_Clouldsearch_Model_Observer
                             $trackObject['name']=$currentItem->getName();
                             $trackObject['sku']=$currentItem->getSku();
                             $trackObject['unique_id']=$currentItem->getProductId();
+                            $trackObject['unit_price']=$currentItem->getPriceInclTax();
                             $trackObject['qty']=$currentItem->getQty();
                             $trackObject['amount']=$currentItem->getRowTotalInclTax();
                             $trackObject['is_removed']=false;
-                            $trackObject['upseller_search']=false;
+                            //$trackObject['upseller_search']=false;
 
                         }
 
