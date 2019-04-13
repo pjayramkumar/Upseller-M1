@@ -19,6 +19,8 @@ Upseller Catalog Search & Feed
  - Upseller can also manage inventory with Product Feeds On All Major Platforms
 
 
+You can sign up for a Upseller account at https://app.upseller.io/register.
+
 
 Upseller Catalog Search Features
 --------------
