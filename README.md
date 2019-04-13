@@ -61,3 +61,21 @@ Upseller Feed Features
      Feed Update Automatically according to product save in your platform.
   -  ### Categorization
      Use built-in channel taxonomies for categorization.
+     
+     
+Documentation  
+--------------
+
+Please see https://upseller.io/doc for up-to-date documentation.
+
+
+Integrations  
+--------------
+
+Please see https://upseller.io/integrations for up-to-date instructions.
+
+
+Faq  
+--------------
+
+Please see https://upseller.io/faq for up-to-date FAQ.
